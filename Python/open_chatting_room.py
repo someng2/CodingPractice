@@ -1,5 +1,3 @@
-import collections
-
 def solution(record):
     result = []
     user = {}
@@ -9,7 +7,6 @@ def solution(record):
         message = temp[0]
         uid = temp[1]
         nick = ''
-        str1 = ''
         if len(temp) == 3:
             nick = temp[2]
         # print(message, ',', uid, ',', nick)
