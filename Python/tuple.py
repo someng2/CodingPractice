@@ -14,4 +14,4 @@ def solution(s):
             if y not in result:
                 result.append(y)
     
-    return resul
+    return result
