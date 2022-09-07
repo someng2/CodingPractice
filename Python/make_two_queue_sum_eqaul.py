@@ -1,7 +1,6 @@
 from collections import deque
 
 def solution(que1, que2):
-    
     result = 0
     sum1 = 0
     sum2 = 0
