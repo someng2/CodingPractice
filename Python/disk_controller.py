@@ -2,7 +2,6 @@ import heapq
 
 def solution(jobs):
     answer = 0
-    length = len(jobs)
     heapq.heapify(jobs)
     prev = -1
     now = 0
@@ -23,4 +22,4 @@ def solution(jobs):
         else:
             now += 1
             
-    return int(answer/length)
+    return int(answer/len(jobs))
