@@ -13,7 +13,7 @@ def solution(numbers):
     answer = 0
     nums = set([])
     
-    # 순열로 1~n개 순열로 숫자 만들어 nums 에 넣기
+    # 1~n개 순열로 숫자 만들어 nums 에 넣기
     for i in range(1, len(numbers)+1):
         for n in list(permut(numbers,i)):
             nums.add(int(''.join(n)))
