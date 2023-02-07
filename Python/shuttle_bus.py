@@ -6,11 +6,8 @@ def getMin(time):
     return int(hour)*60 + int(minute)
 
 def getTime(min):
-    hour = min/60
-    minute = min%60
-    hour = '0'+str(int(hour)) if hour < 10 else str(int(hour))
-    minute = '0'+str(int(minute)) if minute < 10 else str(int(minute))
-    return hour + ':' + minute
+    h, m = divmod(min, 60)
+    return str(h).zfill(2) + ':' + str(m).zfill(2)
     
 def solution(n, t, m, timetable):
     time = getMin("09:00")
